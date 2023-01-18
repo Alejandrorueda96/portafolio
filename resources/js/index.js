@@ -1,14 +1,19 @@
+//Declaracion de variables
 var mensaje = "";
 var mensajeEncriptado = "";
 let mensajeUsuario = document.getElementById('msgOriginal');
 let buttonEnc = document.getElementById('enc');
 let buttonDes = document.getElementById('des');
 mensajeUsuario.addEventListener('input', validate);
-    
+  
+//Deshabilitar los botones de encriptar y desencriptar si el input del mensaje esta vacio
 if(mensajeUsuario.value == "") {
         buttonDes.disabled = true;
         buttonEnc.disabled = true;
     }
+
+//Funcion que valida si el usuario ingresa caracteres no permitidos (Mayusculas,acentos,caracteres especiales)
+//bloqueando los botones de encriptar y desencriptar hasta que elimine dichos caracteres.
 function validate(){
 
     var validarMensaje = mensajeUsuario.value;
@@ -31,6 +36,7 @@ function validate(){
     }
 }
 
+//Funcion que encripta el mensaje ingresado por el usuario usando la guia de encriptacion por el equipo de Alura
 function encriptar(){
     
     mensaje = document.getElementById("msgOriginal").value;
@@ -67,10 +73,11 @@ document.getElementById("canddes").style.display = "none";
 validate();
 }
 
-//Desencriptador
-
+//Desencriptar
 var mensajeOriginal = "";
 var aux = "";
+
+//Funcion que desencripta el mensaje ingresado por el usuario segun las indicaciones realizadas por el equipo Alura
 function desencriptar(){
 mensajeEncriptado = document.getElementById("msgOriginal").value;
 for(i = 0; i < mensajeEncriptado.length; i++){
@@ -155,7 +162,7 @@ document.getElementById("candenc").style.display = "none";
 document.getElementById("canddes").style.display = "block";
 validate();
 }
-
+//Funcion para copiar el mensaje encriptado/desencriptado en el portapapeles
 function copyText() {
 
     let copyText = document.querySelector("#msgEncriptado");
