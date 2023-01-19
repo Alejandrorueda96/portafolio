@@ -73,6 +73,7 @@ function encriptar(){
 console.log(mensajeEncriptado);
 document.getElementById("msgOriginal").value = "";
 document.getElementById("msgEncriptado").value = mensajeEncriptado;
+document.getElementById("msgEncriptado").classList.add("show");
 mensaje = "";
 mensajeEncriptado = "";
 document.getElementById("panelder").style.borderColor = "red";

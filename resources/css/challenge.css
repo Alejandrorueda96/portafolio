@@ -57,9 +57,16 @@ textarea{
     margin: 20px auto;
     width: 340px;
     height: 100px;
-    
 }
 
+textarea.show{
+    color: black;  
+}
+
+.textoencriptado{
+    transition: all 3s; 
+    color: white  
+}
 .panelDer{
     vertical-align: top;
     display:inline-block;
