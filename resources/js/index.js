@@ -70,16 +70,30 @@ function encriptar(){
             
     }
 }
-console.log(mensajeEncriptado);
 document.getElementById("msgOriginal").value = "";
+document.getElementById("msgEncriptado").value = "";
 document.getElementById("msgEncriptado").value = mensajeEncriptado;
-document.getElementById("msgEncriptado").classList.add("show");
+//document.getElementById("msgEncriptado").classList.add("show");
+resetAnimacion();
 mensaje = "";
 mensajeEncriptado = "";
 document.getElementById("panelder").style.borderColor = "red";
 document.getElementById("candenc").style.display = "block";
 document.getElementById("canddes").style.display = "none";
 validate();
+}
+
+//reset animacion
+function resetAnimacion(){
+    window.requestAnimationFrame(function() {
+        document.getElementById("msgEncriptado").classList.remove('show');   
+        document.getElementById("msgEncriptado").classList.remove('textoencriptado');
+        window.requestAnimationFrame(function() {
+          document.getElementById("msgEncriptado").classList.add('show');
+          document.getElementById("msgEncriptado").classList.add('textoencriptado');
+          //document.getElementById("msgEncriptado").classList.add('show');
+        });
+      });
 }
 
 //Desencriptar
