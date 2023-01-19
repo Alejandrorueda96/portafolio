@@ -24,19 +24,18 @@
         <main>
             <form class="form">
                 <div class="panelIzq" id="panelizq">
-                    <input type="text" id="msgOriginal" name="name" placeholder ="Ingrese el texto a encriptar o desencriptar" required
-                    minlength="1"  size="50" onchange="validate()">
-                    
-                    <p id = "msgError"class="msgerror">No ingrese Mayusculas ni caracteres especiales</p>
+                    <input type="text" id="msgOriginal" name="name" placeholder ="Ingrese el texto a encriptar o desencriptar" 
+                    minlength="1"  size="50" onchange="validate()" autocomplete="off">
                     <button class="botonEnc" name = "buttonEnc" id="enc" onclick="encriptar()">Encriptar</button>
                     <button name = "buttonDes" id = "des" onclick="desencriptar()">Desencriptar</button>
+                    <p id = "msgError"class="msgerror">No ingrese Mayusculas ni caracteres especiales</p>
                     
                 </div>
 
                 <div class="panelDer" id="panelder">
                     <div class="panelinter"> 
                             <textarea readonly id="msgEncriptado" name="msg_encrip"></textarea>    
-                            <button class="botonCop"name = "buttonCop" onclick="copyText()">Copiar</button>  
+                            <button type='button' class="botonCop" name = "buttonCop" onclick="copyText()">Copiar</button>  
                             <img id="canddes" class = "candDes" src="./resources/images/candDes.png"  width="50" height="60">
                             <img id="candenc" class = "candEnc" src="./resources/images/candEnc.png"  width="50" height="60">     
                     </div>

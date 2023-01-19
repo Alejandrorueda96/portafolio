@@ -11,6 +11,14 @@ if(mensajeUsuario.value == "") {
         buttonDes.disabled = true;
         buttonEnc.disabled = true;
     }
+//Funcion para copiar el mensaje encriptado/desencriptado en el portapapeles
+function copyText() {
+
+    let copyText = document.querySelector("#msgEncriptado");
+    copyText.select();
+    document.execCommand("copy");
+    
+}
 
 //Funcion que valida si el usuario ingresa caracteres no permitidos (Mayusculas,acentos,caracteres especiales)
 //bloqueando los botones de encriptar y desencriptar hasta que elimine dichos caracteres.
@@ -161,11 +169,4 @@ document.getElementById("panelder").style.borderColor = "green";
 document.getElementById("candenc").style.display = "none";
 document.getElementById("canddes").style.display = "block";
 validate();
-}
-//Funcion para copiar el mensaje encriptado/desencriptado en el portapapeles
-function copyText() {
-
-    let copyText = document.querySelector("#msgEncriptado");
-    copyText.select();
-    document.execCommand("copy");
 }
