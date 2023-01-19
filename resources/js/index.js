@@ -73,7 +73,6 @@ function encriptar(){
 document.getElementById("msgOriginal").value = "";
 document.getElementById("msgEncriptado").value = "";
 document.getElementById("msgEncriptado").value = mensajeEncriptado;
-//document.getElementById("msgEncriptado").classList.add("show");
 resetAnimacion();
 mensaje = "";
 mensajeEncriptado = "";
@@ -91,7 +90,6 @@ function resetAnimacion(){
         window.requestAnimationFrame(function() {
           document.getElementById("msgEncriptado").classList.add('show');
           document.getElementById("msgEncriptado").classList.add('textoencriptado');
-          //document.getElementById("msgEncriptado").classList.add('show');
         });
       });
 }
@@ -180,6 +178,7 @@ document.getElementById("msgOriginal").value = "";
 document.getElementById("msgEncriptado").value = mensajeOriginal;
 mensajeOriginal = "";
 mensajeEncriptado = "";
+resetAnimacion();
 document.getElementById("panelder").style.borderColor = "green";
 document.getElementById("candenc").style.display = "none";
 document.getElementById("canddes").style.display = "block";
