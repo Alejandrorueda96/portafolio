@@ -75,8 +75,8 @@ document.getElementById("msgEncriptado").value = "";
 document.getElementById("msgEncriptado").value = mensajeEncriptado;
 resetAnimacion();
 mensaje = "";
-mensajeEncriptado = "";
-document.getElementById("panelder").style.borderColor = "red";
+mensajeEncriptado = ""; 
+document.getElementById("panelder").style.borderColor = "red"; 
 document.getElementById("candenc").style.display = "block";
 document.getElementById("canddes").style.display = "none";
 validate();
@@ -87,9 +87,11 @@ function resetAnimacion(){
     window.requestAnimationFrame(function() {
         document.getElementById("msgEncriptado").classList.remove('show');   
         document.getElementById("msgEncriptado").classList.remove('textoencriptado');
+        document.getElementById("candenc").classList.remove('opacidad'); 
         window.requestAnimationFrame(function() {
           document.getElementById("msgEncriptado").classList.add('show');
           document.getElementById("msgEncriptado").classList.add('textoencriptado');
+          document.getElementById("candenc").classList.add('opacidad'); 
         });
       });
 }
