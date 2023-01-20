@@ -1,7 +1,7 @@
 header{
     background-color: #ffffff;
     padding: 10px 10px 80px 10px;
-    border-bottom: 2px solid #000000;
+    border-bottom: 3px solid #000000;
 }
 
 .logo{
@@ -28,7 +28,7 @@ header{
     text-decoration: none;
     font-size: 22px;
     padding: 10px;
-    font-family: "Lucida Console", "Courier New", monospace;
+    font-family: 'Chakra Petch', sans-serif;
 }
 
 .navegacion a:hover {
@@ -130,7 +130,7 @@ textarea{
     color: #fff;
     font-family: 'Chakra Petch', sans-serif;
     font-size: 1.2em;
-
+    border: 2px solid #20525C;
 }
 
 .textoencriptado{
@@ -146,7 +146,7 @@ textarea.show{
     width: 420px;
     height: 300px;
     box-sizing: border-box;
-    border: 4px solid #4299fd;  
+    border: 4px solid #20525C;  
     border-radius: 10px 10px 10px 10px ;
     transition: all 3s; 
 }
@@ -161,6 +161,8 @@ input{
 .msgerror{
     visibility: hidden;
     margin: 20px;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 1.2em;
 }
 
 
@@ -170,15 +172,15 @@ input{
     width: 420px;
     height: 300px;
     box-sizing: border-box;
-    border: 4px solid #4299fd;
+    border: 4px solid #20525C;
     margin-right: 50px;
     padding: 0 0 0 0;
     border-radius: 10px 10px 10px 10px ;
 }
 
 .botonCop {
-    background: #27b8bd;
-    border: 1px solid #27b8bd;
+    background: #20525C;
+    border: 1px solid #20525C;
     border-radius: 6px;
     box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
     box-sizing: border-box;
@@ -206,7 +208,7 @@ input{
   .botonCop:active {
     background-color: initial;
     background-position: 0 0;
-    color: #27b8bd;
+    color: #20525C;
   }
   
   .botonCop:active {
@@ -235,11 +237,11 @@ footer{
     bottom: 0;
     left: 0;
     right: 0;
-    background: #111;
+    background: #000000;
     height: auto;
     width: 100vw;
-    font-family: "Open Sans";
-    padding-top: 20px;
+    font-family: 'Chakra Petch', sans-serif;
+    padding-top: 10px;
     color: #fff;
 }
 
@@ -249,6 +251,7 @@ footer{
     justify-content: center;
     flex-direction: column;
     text-align: center;
+    margin-bottom: 8px;
 }
 
 .footerContenido h3{
