@@ -173,8 +173,8 @@ input{
 }
 
 .botonCop {
-    background: #FF4742;
-    border: 1px solid #FF4742;
+    background: #27b8bd;
+    border: 1px solid #27b8bd;
     border-radius: 6px;
     box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
     box-sizing: border-box;
@@ -202,7 +202,7 @@ input{
   .botonCop:active {
     background-color: initial;
     background-position: 0 0;
-    color: #FF4742;
+    color: #27b8bd;
   }
   
   .botonCop:active {
