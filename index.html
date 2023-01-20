@@ -5,6 +5,9 @@
         <title>Encriptador</title>
         <link rel="stylesheet" href="./resources/css/reset.css">
         <link rel="stylesheet" href="./resources/css/challenge.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600&display=swap" rel="stylesheet">
         
     </head>
     <body>
@@ -25,7 +28,7 @@
             <form class="form">
                 <div class="panelIzq" id="panelizq">
                     <input type="text" id="msgOriginal" name="name" placeholder ="Ingrese el texto a encriptar o desencriptar" 
-                    minlength="1"  size="50" onchange="validate()" autocomplete="off">
+                    minlength="1"  size="37" onchange="validate()" autocomplete="off">
                     <button class="botonEnc" name = "buttonEnc" id="enc" onclick="encriptar()">Encriptar</button>
                     <button class= "botonDes" name = "buttonDes" id = "des" onclick="desencriptar()">Desencriptar</button>
                     <p id = "msgError"class="msgerror">No ingrese Mayusculas ni caracteres especiales</p>

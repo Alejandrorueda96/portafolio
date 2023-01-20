@@ -128,6 +128,8 @@ textarea{
     width: 340px;
     height: 100px;
     color: #fff;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 1.2em;
 
 }
 
@@ -141,7 +143,7 @@ textarea.show{
 .panelDer{
     vertical-align: top;
     display:inline-block;
-    width: 400px;
+    width: 420px;
     height: 300px;
     box-sizing: border-box;
     border: 4px solid #4299fd;  
@@ -152,6 +154,8 @@ textarea.show{
 input{
     display: block;
     margin: 20px auto;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 1.2em;
 }
 
 .msgerror{
@@ -163,7 +167,7 @@ input{
 .panelIzq{
     vertical-align: top;
     display:inline-block;
-    width: 400px;
+    width: 420px;
     height: 300px;
     box-sizing: border-box;
     border: 4px solid #4299fd;
