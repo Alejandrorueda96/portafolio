@@ -88,10 +88,12 @@ function resetAnimacion(){
         document.getElementById("msgEncriptado").classList.remove('show');   
         document.getElementById("msgEncriptado").classList.remove('textoencriptado');
         document.getElementById("candenc").classList.remove('opacidad'); 
+        document.getElementById("canddes").classList.remove('opacidad'); 
         window.requestAnimationFrame(function() {
           document.getElementById("msgEncriptado").classList.add('show');
           document.getElementById("msgEncriptado").classList.add('textoencriptado');
           document.getElementById("candenc").classList.add('opacidad'); 
+          document.getElementById("canddes").classList.add('opacidad'); 
         });
       });
 }
