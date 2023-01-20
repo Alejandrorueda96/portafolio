@@ -183,7 +183,7 @@ document.getElementById("msgEncriptado").value = mensajeOriginal;
 mensajeOriginal = "";
 mensajeEncriptado = "";
 resetAnimacion();
-document.getElementById("panelder").style.borderColor = "green";
+document.getElementById("panelder").style.borderColor = "#03ca03";
 document.getElementById("candenc").style.display = "none";
 document.getElementById("canddes").style.display = "block";
 validate();
